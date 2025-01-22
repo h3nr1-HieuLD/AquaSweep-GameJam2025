@@ -1,14 +1,41 @@
 <linker>
   <assembly fullname="GameFoundation.UIModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="GameFoundation.Scripts.UIModule.ScreenFlow.Managers.RootUICanvas" preserve="all" />
+    <type fullname="GameFoundation.Scripts.UIModule.Utilities.ScaleScreenRatio" preserve="all" />
     <type fullname="GameFoundation.Scripts.UIModule.Utilities.UIStuff.UIScreenTransition" preserve="all" />
   </assembly>
   <assembly fullname="HyperCasualGame.Scripts, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="TheOneStudio.HyperCasual.DiverController" preserve="all" />
     <type fullname="TheOneStudio.HyperCasual.Scenes.Loading.LoadingScreenView" preserve="all" />
     <type fullname="TheOneStudio.HyperCasual.Scenes.Main.GamePlay.BuoyancyEffect2D" preserve="all" />
     <type fullname="TheOneStudio.HyperCasual.Scenes.Main.GamePlay.Elements.Circle" preserve="all" />
     <type fullname="TheOneStudio.HyperCasual.Scenes.Main.GamePlay.Elements.CircleBreak" preserve="all" />
     <type fullname="TheOneStudio.HyperCasual.Scenes.Main.GamePlay.Elements.CircleController" preserve="all" />
+    <type fullname="TheOneStudio.HyperCasual.Scenes.Main.GamePlay.Elements.Fish.BlueFish" preserve="all" />
+    <type fullname="TheOneStudio.HyperCasual.Scenes.Main.GamePlay.Elements.Fish.FishRandomSpawner" preserve="all" />
+    <type fullname="TheOneStudio.HyperCasual.Scenes.Main.GamePlay.Elements.Fish.JellyFish" preserve="all" />
+    <type fullname="TheOneStudio.HyperCasual.Scenes.Main.GamePlay.Elements.Fish.NemoFish" preserve="all" />
+    <type fullname="TheOneStudio.HyperCasual.Scenes.Main.GamePlay.Elements.Fish.PufferedFish" preserve="all" />
+    <type fullname="TheOneStudio.HyperCasual.Scenes.Main.GamePlay.Elements.Fish.RedFish" preserve="all" />
+    <type fullname="TheOneStudio.HyperCasual.Scenes.Main.GamePlay.Elements.Fish.SeaAnglerFish" preserve="all" />
+    <type fullname="TheOneStudio.HyperCasual.Scenes.Main.GamePlay.Elements.Fish.SharkFish" preserve="all" />
+    <type fullname="TheOneStudio.HyperCasual.Scenes.Main.GamePlay.Elements.Fish.SquidFish" preserve="all" />
+    <type fullname="TheOneStudio.HyperCasual.Scenes.Main.GamePlay.Elements.Fish.SwordFish" preserve="all" />
+    <type fullname="TheOneStudio.HyperCasual.Scenes.Main.GamePlay.Elements.Rac1" preserve="all" />
+    <type fullname="TheOneStudio.HyperCasual.Scenes.Main.GamePlay.Elements.Rac2" preserve="all" />
+    <type fullname="TheOneStudio.HyperCasual.Scenes.Main.GamePlay.Elements.Rac3" preserve="all" />
+    <type fullname="TheOneStudio.HyperCasual.Scenes.Main.GamePlay.Elements.Rac4" preserve="all" />
+    <type fullname="TheOneStudio.HyperCasual.Scenes.Main.GamePlay.Elements.Rac5" preserve="all" />
+    <type fullname="TheOneStudio.HyperCasual.Scenes.Main.GamePlay.Elements.Rac6" preserve="all" />
+    <type fullname="TheOneStudio.HyperCasual.Scenes.Main.GamePlay.Elements.Rac7" preserve="all" />
+    <type fullname="TheOneStudio.HyperCasual.Scenes.Main.GamePlay.Elements.RotateObject" preserve="all" />
+    <type fullname="TheOneStudio.HyperCasual.Scenes.Main.GamePlay.Elements.RubbishSpawner" preserve="all" />
     <type fullname="TheOneStudio.HyperCasual.Scenes.Main.GamePlay.Elements.SkillAttachCircle" preserve="all" />
+    <type fullname="TheOneStudio.HyperCasual.Scenes.Main.GamePlay.MapController" preserve="all" />
+    <type fullname="TheOneStudio.HyperCasual.Scenes.Main.MainSceneInstaller" preserve="all" />
+    <type fullname="TheOneStudio.HyperCasual.ShipController" preserve="all" />
+    <type fullname="TheOneStudio.HyperCasual.ShipMove" preserve="all" />
+    <type fullname="TheOneStudio.HyperCasual.ShipSpawner" preserve="all" />
     <type fullname="TheOneStudio.HyperCasual.UI.Gameplay.CashCountdown" preserve="all" />
     <type fullname="TheOneStudio.HyperCasual.UI.Gameplay.GameHomeScreenView" preserve="all" />
     <type fullname="TheOneStudio.HyperCasual.UI.Gameplay.GamePlayScreenView" preserve="all" />
@@ -16,9 +43,14 @@
     <type fullname="TheOneStudio.HyperCasual.UI.Gameplay.UpgradePopupView" preserve="all" />
     <type fullname="TheOneStudio.HyperCasual.UI.Gameplay.WinScreenView" preserve="all" />
     <type fullname="TheOneStudio.HyperCasual.UpgradeItemView" preserve="all" />
+    <type fullname="TheOneStudio.HyperCasual.WaterSurfaceDetector" preserve="all" />
   </assembly>
   <assembly fullname="Unity.Addressables, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" preserve="all">
     <type fullname="UnityEngine.AddressableAssets.Addressables" preserve="all" />
+  </assembly>
+  <assembly fullname="Unity.RenderPipelines.Universal.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.Rendering.Universal.UniversalAdditionalCameraData" preserve="all" />
+    <type fullname="UnityEngine.Rendering.Universal.TemporalAA/Settings" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="Unity.ResourceManager, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" preserve="all">
     <type fullname="UnityEngine.ResourceManagement.ResourceProviders.AssetBundleProvider" preserve="all" />
@@ -57,22 +89,29 @@
   </assembly>
   <assembly fullname="UnityEngine.AudioModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.AudioClip" preserve="all" />
+    <type fullname="UnityEngine.AudioListener" preserve="all" />
     <type fullname="UnityEngine.AudioSource" preserve="all" />
   </assembly>
   <assembly fullname="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.Camera" preserve="all" />
     <type fullname="UnityEngine.GameObject" preserve="all" />
+    <type fullname="UnityEngine.LightingSettings" preserve="all" />
+    <type fullname="UnityEngine.LightmapSettings" preserve="all" />
+    <type fullname="UnityEngine.LightProbes" preserve="all" />
+    <type fullname="UnityEngine.LineRenderer" preserve="all" />
     <type fullname="UnityEngine.Material" preserve="all" />
     <type fullname="UnityEngine.Object" preserve="all" />
     <type fullname="UnityEngine.RectTransform" preserve="all" />
+    <type fullname="UnityEngine.RenderSettings" preserve="all" />
     <type fullname="UnityEngine.Shader" preserve="all" />
     <type fullname="UnityEngine.Sprite" preserve="all" />
     <type fullname="UnityEngine.SpriteRenderer" preserve="all" />
     <type fullname="UnityEngine.Texture2D" preserve="all" />
     <type fullname="UnityEngine.Transform" preserve="all" />
-    <type fullname="UnityEngine.Events.ArgumentCache" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Events.PersistentCallGroup" preserve="nothing" serialized="true" />
-    <type fullname="UnityEngine.Events.PersistentListenerMode" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Events.UnityEvent" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Events.ArgumentCache" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Events.PersistentListenerMode" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.RectOffset" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="UnityEngine.DirectorModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
@@ -83,32 +122,42 @@
     <type fullname="UnityEngine.ParticleSystemRenderer" preserve="all" />
   </assembly>
   <assembly fullname="UnityEngine.Physics2DModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.BoxCollider2D" preserve="all" />
     <type fullname="UnityEngine.CircleCollider2D" preserve="all" />
+    <type fullname="UnityEngine.DistanceJoint2D" preserve="all" />
+    <type fullname="UnityEngine.FixedJoint2D" preserve="all" />
     <type fullname="UnityEngine.PhysicsMaterial2D" preserve="all" />
     <type fullname="UnityEngine.Rigidbody2D" preserve="all" />
+    <type fullname="UnityEngine.SpringJoint2D" preserve="all" />
   </assembly>
   <assembly fullname="UnityEngine.TextRenderingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.Font" preserve="all" />
   </assembly>
   <assembly fullname="UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.UI.Button" preserve="all" />
+    <type fullname="UnityEngine.UI.CanvasScaler" preserve="all" />
+    <type fullname="UnityEngine.UI.GraphicRaycaster" preserve="all" />
     <type fullname="UnityEngine.UI.HorizontalLayoutGroup" preserve="all" />
     <type fullname="UnityEngine.UI.Image" preserve="all" />
     <type fullname="UnityEngine.UI.Outline" preserve="all" />
     <type fullname="UnityEngine.UI.Slider" preserve="all" />
     <type fullname="UnityEngine.UI.Text" preserve="all" />
+    <type fullname="UnityEngine.UI.MaskableGraphic/CullStateChangedEvent" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.UI.AnimationTriggers" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.UI.Button/ButtonClickedEvent" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.UI.ColorBlock" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.UI.FontData" preserve="nothing" serialized="true" />
-    <type fullname="UnityEngine.UI.MaskableGraphic/CullStateChangedEvent" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.UI.Navigation" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.UI.Slider/SliderEvent" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.UI.SpriteState" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="UnityEngine.UIModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.Canvas" preserve="all" />
     <type fullname="UnityEngine.CanvasGroup" preserve="all" />
     <type fullname="UnityEngine.CanvasRenderer" preserve="all" />
+  </assembly>
+  <assembly fullname="Zenject-Source, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="Zenject.SceneContext" preserve="all" />
   </assembly>
   <assembly fullname="UnityEngine.TextCoreFontEngineModule">
     <type fullname="UnityEngine.TextCore.FaceInfo" preserve="nothing" serialized="true" />
